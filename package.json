@@ -1,0 +1,24 @@
+{
+  "name": "legacy-fonts-to-unicode",
+  "version": "1.0.0",
+  "description": "Convert legacy font text to Unicode and back: Kruti Dev (Hindi), Preeti (Nepali), Bijoy (Bangla), Bamini (Tamil), FM Abhaya (Sinhala) and Zawgyi (Myanmar).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }, "./krutidev": { "types": "./dist/krutidev.d.ts", "import": "./dist/krutidev.js" }, "./preeti": { "types": "./dist/preeti.d.ts", "import": "./dist/preeti.js" }, "./bijoy": { "types": "./dist/bijoy.d.ts", "import": "./dist/bijoy.js" }, "./bamini": { "types": "./dist/bamini.d.ts", "import": "./dist/bamini.js" }, "./fmabhaya": { "types": "./dist/fmabhaya.d.ts", "import": "./dist/fmabhaya.js" }, "./zawgyi": { "types": "./dist/zawgyi.d.ts", "import": "./dist/zawgyi.js" } },
+  "files": ["dist", "LICENSE*", "NOTICE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["kruti-dev", "krutidev-to-unicode", "preeti", "preeti-to-unicode", "bijoy", "bijoy-to-unicode", "bamini", "fm-abhaya", "sinhala", "zawgyi", "myanmar", "unicode", "hindi", "nepali", "bangla", "tamil", "font-converter"],
+  "author": "Osama Mumtaz",
+  "license": "MIT AND Apache-2.0",
+  "homepage": "https://github.com/osamamumtaz01/legacy-fonts-to-unicode#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/osamamumtaz01/legacy-fonts-to-unicode.git" },
+  "bugs": { "url": "https://github.com/osamamumtaz01/legacy-fonts-to-unicode/issues" },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "typescript": "^5.6.0" }
+}

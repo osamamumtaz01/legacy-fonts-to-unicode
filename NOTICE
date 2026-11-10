@@ -1,0 +1,19 @@
+legacy-fonts-to-unicode
+Copyright (c) 2026 Osama Mumtaz
+
+This package contains code and character tables adapted from the projects
+below. Each source file names its sources and keeps their licence notice.
+
+- src/zawgyi.ts: Google myanmar-tools (https://github.com/google/myanmar-tools),
+  Copyright 2017 Google LLC, Apache License 2.0 (see LICENSE-APACHE).
+  Modified; the changes are listed in the file header.
+- src/bamini.ts: aril by Sanjaiyan Parthipan (https://github.com/digital-tamil/aril),
+  MIT OR Apache-2.0, used under MIT.
+- src/krutidev.ts: @bharattype/hindi-transliteration (MIT).
+- src/preeti.ts: preeti2unicode by Roj Tamang and Navraj Bhattarai (MIT).
+- src/bijoy.ts: bijoy2unicode by Md. Jehad, unicode2ascii by Md. Nimuzzaman and
+  @codesigntheory/bnbijoy2unicode by Utsob Roy (all MIT).
+- src/fmabhaya.ts: Pandukabhaya by akuruAI and sinhala-unicode-converter by
+  Janaka Chathuranga / UCSC LTRL (both MIT).
+
+All other code is under the MIT License (see LICENSE).
